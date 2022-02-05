@@ -1,0 +1,10 @@
+basic.showString("Hello!")
+basic.forever(function () {
+    edubitMotors.setServoPosition(ServoChannel.All, 15)
+    basic.showIcon(IconNames.Heart)
+    basic.showIcon(IconNames.SmallHeart)
+    basic.pause(2000)
+    edubitMotors.setServoPosition(ServoChannel.All, 165)
+    basic.showIcon(IconNames.Square)
+    basic.showIcon(IconNames.Yes)
+})
